@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Studio Arcline</title>
+    <link rel="icon" href="images/icon.png" type="image/x-" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="nav">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Studio ArcLine Logo" />
+        </a>
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image">
+        <img
+          src="images/modern-architectural-building-glass-facade.jpg"
+          alt="Modern Architecture"
+        />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-subtitle">
+          Let's discuss how we can bring your architectural vision to life
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="contact-form">
+            <h2 class="section-title">Send Us a Message</h2>
+
+            <!-- ✅ أضفنا id ليستطيع JS الوصول للفورم -->
+            <form id="contactForm">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <label for="feedback">Your Feedback</label>
+              <textarea
+                id="feedback"
+                name="feedback"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h3>
+              Visit our office or reach out through any of the channels below.
+            </h3>
+
+            <div class="info-item">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="details">
+                <h4>Office Address</h4>
+                <p>Al Olaya District<br />Riyadh, Saudi Arabia</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon"><i class="fas fa-phone"></i></div>
+              <div class="details">
+                <h4>Phone</h4>
+                <p>+966 55 555 5555</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon"><i class="fas fa-envelope"></i></div>
+              <div class="details">
+                <h4>Email</h4>
+                <p>info@studioarcline.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon"><i class="fas fa-clock"></i></div>
+              <div class="details">
+                <h4>Office Hours</h4>
+                <p>Sunday – Thursday<br />9:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3 class="footer-title">Studio ArcLine</h3>
+            <p class="footer-text">
+              Leading architectural and engineering consulting firm creating
+              innovative and sustainable designs.
+            </p>
+          </div>
+          <div>
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-links">
+              <li>King Fahd Road, Riyadh</li>
+              <li>+966 11 234 5678</li>
+              <li>info@studioarcline.com</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="#" aria-label="LinkedIn">
+                <svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Studio ArcLine. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/js/main.js"></script>
+  </body>
+</html>
